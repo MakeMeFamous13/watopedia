@@ -1,0 +1,332 @@
+@media (max-width:1200px) {
+    div > .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .slider-center {
+        margin: -181px 0 0 -225px;
+        width:450px;
+        height:392px;
+    }
+    .benefits {
+        padding: 90px 0 100px;
+    }
+    .companies {
+        padding: 70px 0 20px;
+    }
+    .company-info span {
+        font-size: 22px;
+    }
+    .company-info span span {
+        font-size: 15px;
+    }
+    .company-info {
+        margin: 0 0 28px;
+    }
+    .team-box img {
+        margin: 0 0 50px;
+    }
+    .team {
+        padding: 80px 0 40px;
+    }
+    .team-box {
+        width:27%;
+    }
+}
+@media (max-width:991px) {
+    .clients .container div:first-child {
+        padding: 0;
+    }
+    .clients .container div {
+        -webkit-box-pack: center; 
+        -moz-box-pack: center; 
+        -ms-flex-pack: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        margin: 0;
+    }
+    .clients .container div img {
+        margin: 5px;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .slider-center {
+        width: 380px;
+        height: 331px;
+        margin: -165px 0 0 -190px;
+    }
+    .logo {
+        margin-right: 40px;
+    }
+    .benefits {
+        padding: 56px 0 70px;
+    }
+    .title-box {
+        font-size: 36px;
+        margin: 0 0 40px;
+    }
+    .title-box span {
+        font-size: 30px;
+    }
+    .benefit-box, .company-box {
+        width:30%;
+    }
+    .companies {
+        padding: 50px 0 20px;
+    }
+    .companies .title-box {
+        margin: 0 0 25px;
+    }
+    .company-box img {
+        margin: 0 0 20px;
+        width:100%;
+        max-width: 283px;
+    }
+    .company-info span {
+        font-size: 17px;
+    }
+    .company-info span span {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .team {
+        padding: 65px 0 40px;
+    }
+    .team-box {
+        width:30%;
+        padding: 0 0 30px;
+    }
+    .team-box img {
+        width:200px;
+        margin: 0 0 35px;
+    }
+    .teammate-name {
+        font-size: 20px;
+    }
+    .teammate-position {
+        margin: 0 0 25px;
+    }
+    .footer {
+        padding: 24px 0;
+    }
+    .footer-nav {
+        overflow: hidden;
+        margin: 25px 0 40px;
+    }
+    .footer-nav li {
+        padding: 0 10px;
+    }
+    .footer-left {
+        width:405px;
+    }
+    .mail-link {
+        margin: 23px 0 32px;
+    }
+    /* company inner */
+    .wat-img {
+        float: left;
+        margin: 0 35px 0 0;
+        max-width: 50%;
+    }
+    .company-text p {
+        font-size: 18px;
+    }
+    .company-section {
+        padding: 40px 0 50px;
+    }
+}
+@media (max-width:767px) {
+    body {
+        font-size: 13px;
+    }
+    p {
+        text-align: justify;
+    }
+    .header > .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-slider .slick-slide img {
+        min-height: 200px;
+        min-width: 360px;
+    }
+    .slider-center {
+        width: 192px;
+        height: 168px;
+        margin: -81px 0 0 -84px;
+    }
+    .logo {
+        float: none;
+        display: block;
+        margin: 15px auto;
+        width:234px;
+    }
+    .nav {
+        float: none;
+        width:100%;
+        margin: 0 0 15px;
+        text-align: center;
+        display: block;
+    }
+    .nav > li {
+        margin: 0 4px;
+        font-size: 12px;
+        line-height: 16px;
+        float: none;
+        display: inline-block;
+    }
+    .inner-nav {
+        top: 22px;
+    }
+    .benefits {
+        font-size: 14px;
+        padding: 33px 0 20px;
+    }
+    .title-box {
+        font-size: 21px;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+    .title-box span {
+        font-size: 18px;
+    }
+    .benefits-row, .companies-row {
+        margin: 30px 0 0 0;
+    }
+    .benefit-box, .company-box {
+        width:100%;
+        font-size: 13px;
+        padding: 0 0 30px;
+        margin: 0 0 25px;
+    }
+    .benefit-title {
+        font-size: 16px;
+        margin: 0 0 15px;
+        text-align: center;
+    }
+    .benefit-title:before {
+        margin: 0 auto 14px;
+    }
+    .companies {
+        padding: 30px 0 0;
+    }
+    .companies .title-box {
+        margin: 0 0 15px;
+    }
+    .company-box img {
+        margin: 0 0 14px;
+    }
+    .company-info span {
+        font-size: 17px;
+    }
+    .company-info span span {
+        font-size: 14px;
+    }
+    .company-info {
+        width:240px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+    .team {
+        padding: 35px 0 20px;
+    }
+    .team-box {
+        width:100%;
+        margin: 15px 0;
+        text-align: center;
+        padding: 0 0 20px;
+    }
+    .team-box img,
+    .company-box img {
+        margin: 0 auto 15px;
+    }
+    .team-box img {
+        width:181px;
+    }
+    .team-box p {
+        font-size: 13px;
+    }
+    .footer {
+        padding: 20px 0 40px;
+        position: relative;
+    }
+    .footer-left,
+    .footer-right {
+        float: none;
+        text-align: center;
+        margin: 10px 0;
+        width:auto;
+    }
+    .footer-logo {
+        width:234px;
+        margin: 0 auto;
+    }
+    .footer-nav {
+        margin: 15px 0;
+        text-align: center;
+    }
+    .footer-nav li {
+        display: inline-block;
+        float: none;
+        margin: 3px 0;
+    }
+    .footer-right p {
+        font-size: 13px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .mail-link {
+        font-size: 16px;
+        margin: 10px 0 15px;
+        text-align: center;
+    }
+    .footer-soc {
+        text-align: center;
+    }
+    .copy {
+        position: absolute;
+        bottom:15px;
+        width:100%;
+        padding: 0;
+        left: 0;
+    }
+    /* company inner */
+    .wat-img {
+        float: none;
+        width:100%;
+        max-width: 482px;
+        margin: 0 auto 15px;
+        display: block;
+    }
+    .companies-nav ul li {
+        font-size: 14px;
+        margin: 0px 10px;
+    }
+    .company-section {
+        padding: 40px 0;
+    }
+    .company-section-title {
+        font-size: 30px;
+        margin: 0 0 30px;
+    }
+    .company-section-title span {
+        font-size: 24px;
+    }
+    .company-text p {
+        font-size: 18px;
+        margin: 0 0 20px;
+    }
+    .company-text img {
+        margin: 0 auto;
+    }
+}
+@media (min-width:710px) and (max-width:767px) {
+    
+}
+@media(min-width:600px) and (max-width: 709px) {
+    
+}
+@media (max-width: 479px){
+}

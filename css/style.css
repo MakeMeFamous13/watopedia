@@ -1,0 +1,604 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-regular-webfont.svg#montserratregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype'),
+         url('../fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body {
+	height: 100%;
+}
+body {
+    background: #fff;
+    margin: 0;
+    font-family: 'montserratregular';
+    color: #333;
+    font-size: 14px;
+    overflow-x: hidden;
+    position: relative;
+}
+.clearfix:before,
+.clearfix:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+a:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+b {
+    font-family: 'montserratbold';
+}
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder {
+    color: transparent !important;
+}
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
+    color: transparent !important;
+}
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder{
+    color: transparent !important;
+}
+input:focus,
+textarea:focus {
+    outline: none;
+}
+.container {
+    width:100%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+p {
+    margin: 0;
+    font-family: 'ralewayregular';
+}
+* {
+-webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+      box-sizing: border-box;
+}
+button:focus {
+    outline: none;
+}
+button:hover {
+    cursor: pointer;
+}
+/* header */
+.logo {
+    float: left;
+    margin: 25px 123px 0 0;
+}
+.nav {
+    float: right;
+}
+.nav > li {
+    font-size: 14px;
+    text-transform: uppercase;
+    float: left;
+    margin: 0 0 0 32px;
+    line-height: 90px;
+    color: #9ea3ab;
+    position: relative;
+}
+.nav > li > a {
+    padding: 0;
+    color: #9ea3ab;
+    transition: 0.3s linear;
+}
+.nav > li.active > a,
+.nav > li.active > span {
+    color: #191c21;
+}
+.nav > li > span {
+    transition: 0.3s linear;
+}
+.inner-nav {
+    display: none;
+    padding: 7px 18px;
+    background: #191c21;
+    position: absolute;
+    z-index: 5;
+    top:66px;
+    width:200%;
+    margin: 0 0 0 -50%;
+}
+.inner-nav:after {
+    clear: both;
+    display: block;
+    content: '';
+    border: 7px solid transparent;
+    border-bottom: 7px solid #191c21;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    margin: 0px 0 0 -7px;
+}
+.inner-nav li {
+    line-height: 16px;
+    margin: 8px 0;
+}
+.inner-nav li a {
+    color: #9ea3ab;
+}
+.inner-nav li a:hover {
+    text-decoration: underline;
+}
+.nav > li:hover .inner-nav {
+    display: block;
+}
+.nav > li > a:hover,
+.nav > li > span:hover{
+    background: none;
+    transition: 0.3s linear;
+    opacity: 0.7;
+}
+/* slider */
+.slider {
+    position: relative;
+}
+.main-slider .slick-slide img {
+    width:100%;
+    display: block;
+}
+.slider-center {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin: -230px 0 0 -264px;
+    width:528px;
+    height:461px;
+    z-index: 2;
+}
+.main-slider .slick-arrow {
+    position: absolute;
+    top:50%;
+    width:50px;
+    height: 103px;
+    margin: -51.5px 0 0;
+    background: rgba(25,28,33,0.8);
+    z-index: 3;
+    border: none;
+    text-align: center;
+    transition: 0.3s linear;
+}
+.main-slider .slick-prev {
+    left: 0;
+}
+.main-slider .slick-prev img {
+    transform: rotate(180deg);
+}
+.main-slider .slick-next {
+    right: 0;
+}
+.main-slider .slick-arrow:hover {
+    opacity: 0.7;
+    transition: 0.3s linear;
+}
+/* benefits */
+.benefits {
+    background: #191c21;
+    padding: 60px 0;
+    font-size: 18px;
+    font-family: 'ralewayregular';
+    color: #9ea3ab;
+}
+.benefits p {
+    margin: 0;
+    line-height: 25px;
+}
+.title-box {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #fff;
+    display: block;
+    margin: 0 0 55px 0;
+    font-family: 'montserratbold';
+}
+.title-box span {
+    font-size: 40px;
+    display:block;
+}
+.benefit-title {
+    display: block;
+    font-size: 24px;
+    margin: 0 0 40px 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'montserratbold';
+}
+.benefit-title:before {
+    width:34px;
+    height: 3px;
+    background: #fff;
+    content: '';
+    display: block;
+    clear: both;
+    margin: 0 0 28px;
+}
+.benefits-row,
+.companies-row {
+    margin: 42px 0 0 0;
+    display: flex; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex;
+    -webkit-box-pack: justify; 
+    -moz-box-pack: justify; 
+    -ms-flex-pack: justify; 
+    -webkit-justify-content: space-between; 
+    justify-content: space-between; 
+    -webkit-flex-wrap: wrap; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+.benefit-box,
+.company-box {
+    font-size: 16px;
+    width:25%;
+    line-height: 29px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.company-box {
+    padding: 0;
+}
+.more-bt {
+    display: block;
+    color: #fff;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    font-size: 14px;
+    font-family: 'montserratregular';
+    text-transform: uppercase;
+}
+.more-bt span {
+    transition: 0.3s linear;
+    padding: 0 4px;
+}
+.more-bt:hover span {
+    padding: 0 25px;
+    transition: 0.3s linear;
+}
+/* companies */
+.companies {
+    padding: 65px 0 45px;
+}
+.companies .title-box {
+    color: #191c21;
+    margin: 0 0 60px 0;
+}
+.companies-row {
+    margin: 0;
+}
+.company-box {
+    width:27%;
+    font-size: 16px;
+    color: #9ea3ab;
+}
+.company-box img {
+    display: block;
+    width:283px;
+    margin: 0 0 34px 0;
+}
+.company-info {
+    position: relative;
+    margin: 0 0 38px 0;
+}
+.company-info a {
+    position: relative;
+    display: block;
+    transition: 0.3s linear;
+}
+.company-info a:before {
+    float: left;
+    content: '';
+    display: block;
+    margin: 3px 12px 0 0;
+}
+.company-info a:hover {
+    opacity: 0.7;
+    transition: 0.3s linear;
+}
+.company-info.watstock a:before  {
+    background: url(../images/watstock-ico.png) no-repeat; 
+    width:60px;
+    height: 47px;
+}
+.company-info.watgold a:before  {
+    background: url(../images/watgold-ico.png) no-repeat; 
+    width:60px;
+    height: 46px;
+}
+.company-info.watpetrol a:before  {
+    background: url(../images/watpetrol-ico.png) no-repeat; 
+    width:63px;
+    height: 52px;
+    margin: 0 12px 0 0;
+}
+.company-info span {
+    display: block;
+    font-size: 24px;
+    color: #191c21;
+    font-family: 'montserratbold';
+    text-transform: uppercase;
+}
+.company-info span span {
+    color: #8a8b8c;
+    font-size: 20px;
+}
+/* team */
+.team {
+    background: url(../images/team-bg.jpg) no-repeat 50% 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    padding: 75px 0 35px;
+}
+.team-row {
+    display: flex; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    -webkit-box-align: start; 
+    -webkit-align-items: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start;
+    -webkit-box-pack: justify; 
+    -moz-box-pack: justify; 
+    -ms-flex-pack: justify; 
+    -webkit-justify-content: space-between; 
+    justify-content: space-between; 
+    -webkit-flex-wrap: wrap; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+.team-box {
+    position: relative;
+    padding: 0 0 60px 0;
+    width:27%;
+}
+.team-box:after {
+    content: '';
+    display: block;
+    clear: both;
+    width:34px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.team-box img {
+    display: block;
+    margin: 0 0 50px 0;
+    width:251px;
+}
+.teammate-name {
+    display: block;
+    font-family: 'montserratbold';
+    font-size: 24px;
+    color: #fff;
+    margin: 0 0 14px;
+}
+.teammate-position {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 40px;
+}
+.team-box p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 29px;
+}
+/* clients */
+.clients {
+    padding: 40px 0 20px;
+}
+.clients .container {
+    max-width:970px;
+    margin: 0 auto;
+}
+.clients .container div:first-child {
+    padding: 0 30px;
+}
+.clients .container div {
+    display: flex; 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: -webkit-flex; 
+    -webkit-box-align: center; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    align-content: center;
+    -webkit-box-pack: justify; 
+    -moz-box-pack: justify; 
+    -ms-flex-pack: justify; 
+    -webkit-justify-content: space-between; 
+    justify-content: space-between; 
+    -webkit-flex-wrap: wrap; 
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    margin: 14px 0;
+}
+/* footer */
+.footer {
+    background: #1f2227;
+    padding: 40px 0 30px 0;
+}
+.footer-logo {
+    display: block;
+}
+.footer-logo img {
+    display: block;
+}
+.footer-nav {
+    overflow: hidden;
+    margin: 16px 0 20px;
+}
+.footer-nav li:first-child {
+    padding: 0 15px 0 8px;
+}
+.footer-nav li {
+    float: left;
+    text-transform: uppercase;
+    padding: 0 15px;
+}
+.footer-nav li a {
+    display: block;
+    transition: 0.3s linear;
+    color: #5b6069;
+}
+.copy {
+    display: block;
+    color: #5b6069;
+    padding: 0 15px 0 8px;
+}
+.footer-left {
+    float: left;
+    width:455px;
+}
+.footer-right {
+    width:330px;
+    float: right;
+    text-align: right;
+    padding: 15px 0 0 0;
+}
+.footer-right p {
+    font-size: 16px;
+    color: #5b6069;
+    line-height: 23px;
+}
+.mail-link {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    margin: 14px 0 74px;
+    transition: 0.3s linear;
+    text-transform: uppercase;
+}
+.footer-soc {
+    margin: 16px 0 0 0;
+}
+.footer-soc li {
+    display: inline-block;
+    margin: 0 0 0 18px;
+}
+.footer-soc li:first-child {
+    margin: 0;
+}
+.footer-soc li a,
+.footer-soc li a img {
+    display: block;
+    transition: 0.3s linear;
+}
+.footer-soc li a:hover,
+.footer-nav li a:hover,
+.mail-link:hover {
+    opacity: 0.7;
+    transition: 0.3s linear;
+}
+/* companies inner */
+.companies-nav {
+    background: url(../images/nav-bg.jpg) no-repeat 50% 0;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+.companies-nav ul {
+    text-align: center;
+}
+.companies-nav ul li {
+    display: inline-block;
+    line-height: 54px;
+    font-size: 16px;
+    margin: 0 14px;
+}
+.companies-nav ul li a {
+    color: #9aa0a6;
+    transition: 0.3s linear;
+}
+.companies-nav ul li a:hover {
+    opacity: 0.7;
+    transition: 0.3s linear;
+}
+.companies-nav ul li.active a {
+    color: #ffffff;
+}
+.companies-nav ul li.active a:hover {
+    opacity: 1;
+}
+.company-section {
+    padding: 75px 0 150px;
+}
+.company-section-title {
+    font-size: 48px;
+    display: block;
+    color: #191c21;
+    margin: 0 0 50px 0;
+    font-family: 'montserratbold';
+}
+.company-section-title span {
+    font-size: 40px;
+    color: #8a8b8c;
+    display: block;
+}
+.wat-img {
+    float: left;
+    margin: 0 95px 0 0;
+}
+.company-text p {
+    margin: 0 0 35px 0;
+    color: #9ea3ab;
+    font-size: 20px;
+}
+.company-text img {
+    display: block;
+}
+.clients.gray {
+    background: #f2f2f2;
+}
+.company-box .more-bt {
+    float: right;
+    color: #9ea3ab;
+}
