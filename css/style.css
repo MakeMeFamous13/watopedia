@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'montserratregular';
     src: url('../fonts/montserrat-regular-webfont.eot');
@@ -350,7 +351,7 @@ button:hover {
     height: 46px;
 }
 .company-info.watpetrol a:before  {
-    background: url(../images/watpetrol-ico.png) no-repeat; 
+    background: url(../images/icon1.png) no-repeat; 
     width:63px;
     height: 52px;
     margin: 0 12px 0 0;
